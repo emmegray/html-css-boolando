@@ -9,34 +9,52 @@
 /* BODY */
 
 .row {
-    max-width: 90%;
-    margin: 30px;
+    margin: 0 auto;
     margin-top: 20px;
-    background-color: palevioletred;
+    max-width: calc(100% - 40px);
 }
 
 .product {
-    background-color: rgb(246, 210, 222);
     position: relative;
     display: inline-block;
+    float: left;
     cursor: pointer;
+    max-width: calc(33% - 11px);
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.product:nth-child(3n) {
+    margin-right: 0;
 }
 
 .product img {
-    max-width: 50%;
+    max-width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
 
+.product .tag {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 80px;
 }
 
 .product .like {
     position: absolute;
     top: 20px;
-    right: 500px;
+    right: 0px;
     background-color: white;
     padding: 15px;
 }
 
+.product:hover .heart {
+    color: red;
+    display: block;
+}
+
 .product .discount {
-    float: left;
     padding: 5px;
     color: white;
     font-size: small;
@@ -45,11 +63,32 @@
   }
 
 .product .extra-tag {
-    float: left;
     padding: 5px;
     margin-left: 5px;
     color: white;
     font-size: small;
     font-weight: bolder;
     background-color: green;
+}
+
+.product .brand,.product .name, .product .price {
+    display: block;
+}
+
+.product .brand {
+    font-size: 0.8rem;
+}
+
+.product .name {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.product .price-sale {
+    font-weight: bold;
+    color: red;
+}
+
+.product .price-old {
+    text-decoration: line-through;
 }
