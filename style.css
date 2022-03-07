@@ -49,7 +49,7 @@
     padding: 15px;
 }
 
-.product:hover .heart {
+.product:hover .like {
     color: red;
     display: block;
 }
@@ -64,7 +64,6 @@
 
 .product .extra-tag {
     padding: 5px;
-    margin-left: 5px;
     color: white;
     font-size: small;
     font-weight: bolder;
