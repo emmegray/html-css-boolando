@@ -8,13 +8,48 @@
 
 /* BODY */
 
-body {
+.row {
     max-width: 90%;
-    margin: auto;
+    margin: 30px;
+    margin-top: 20px;
+    background-color: palevioletred;
 }
 
-main {
-    
+.product {
+    background-color: rgb(246, 210, 222);
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
 }
 
+.product img {
+    max-width: 50%;
 
+}
+
+.product .like {
+    position: absolute;
+    top: 20px;
+    right: 500px;
+    background-color: white;
+    padding: 15px;
+}
+
+.product .discount {
+    float: left;
+    padding: 5px;
+    color: white;
+    font-size: small;
+    font-weight: bolder;
+    background-color: red;
+  }
+
+.product .extra-tag {
+    float: left;
+    padding: 5px;
+    margin-left: 5px;
+    color: white;
+    font-size: small;
+    font-weight: bolder;
+    background-color: green;
+}
